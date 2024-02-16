@@ -57,20 +57,38 @@ Selenium Webdriver (желательно использовать браузер
 
 - Перейдите в корневую папку проекта
 
-- Создайте виртуальное окружение: **python -m venv venv**
+- Создайте виртуальное окружение:
+```
+python -m venv venv
+```
 
-- Активируйте виртуальное окружение: **source venv/Scripts/activate**
+- Активируйте виртуальное окружение:
+```
+source venv/Scripts/activate
+```
 
 #### Зависимости:
 
-- Установите зависимости: **pip install -r requirements.txt**
+- Установите зависимости:
+```
+pip install -r requirements.txt
+```
 
 #### Запуск автотестов
 
-- Выполните команду для запуска тестов: **pytest -s -v**
+- Выполните команду для запуска тестов:
+```
+pytest -s -v
+```
 
 #### Генерация и запуск отчетов Allure
 
-- Выполните команду для запуска тестов: **pytest -s -v --alluredir allure-results**
+- Выполните команду для запуска тестов:
+```
+pytest -s -v --alluredir allure-results
+```
 
-- Выполните команду для просмотра отчета: **allure serve allure-results**  
+- Выполните команду для просмотра отчета:
+```
+allure serve allure-results
+```
