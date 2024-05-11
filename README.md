@@ -1,94 +1,79 @@
 # SDET__practicum
 
-## Тестовое задание
-1. На выбранном языке программирования - Java (рекомендуется использовать 11
-или 17) или Python (рекомендуется использовать версию 3.10) создать проект UI-
-автотестов по тест-кейсам описанным ниже.
-2. В проекте использовать:
-Selenium Webdriver (желательно использовать браузер Chrome).
-При поиске элементов на странице использовать как минимум по одному
-селектору из перечисленных: css, xpath, id.
-Один из тестовых фреймворков: Java - TestNG, JUnit 4/5, Python – pytest
-Один из сборщиков (для Java): Maven, Gradle.
-3. Результаты оформить в виде проекта на GitHub.
-4. В проекте желательно использовать паттерн проектирования Page Object Model.
-5. Приветствуется, но не обязательно, реализация формирования отчетов о
-пройденных тестах через Allure.
+## Test Task
 
-## Кейс. Заполнение формы регистрации
+1. Choose a programming language - Java (version 11 or 17 recommended) or Python (version 3.10 recommended) to create a project of UI tests based on the described test cases below.
+2. Use the following in the project:
+   - Selenium WebDriver (preferably using Chrome browser).
+   - When searching for elements on the page, use at least one selector from the following: css, xpath, id.
+   - Choose one of the testing frameworks: Java - TestNG, JUnit 4/5, Python - pytest.
+   - Choose one of the build systems (for Java): Maven, Gradle.
+3. Format the results as a project on GitHub.
+4. It is advisable to use the Page Object Model design pattern in the project.
+5. Implementation of reporting on passed tests through Allure is welcomed but not mandatory.
 
-Предусловие:
-1. Открыть браузер
-2. Перейти на страницу входа: https://demoqa.com/automation-practice-form
-   
-Шаги:
-1. Заполнить поле First Name произвольной строкой
-   
-3. Заполнить поле Last Name произвольной строкой
-   
-5. Заполнить поле Email строкой формата name@example.com
-   
-7. Выбрать любое значение в Gender с помощью переключателя
-   
-9. Заполнить поле Mobile произвольными 10 цифрами
-    
-11. Заполнить поле Date of birth произвольной датой с помощью всплывающего календаря
-    
-13. Заполнить поле Subjects произвольной строкой
-    
-15. Загрузить любое изображение в поле Picture
-    
-17. Заполнить поле Current Address произвольной строкой
-    
-10.Выбрать любое значение в Select State с помощью выпадающего списка
+## Test Case: Registration Form Submission
 
-11.Выбрать любое значение в Select City с помощью выпадающего списка
+### Preconditions:
+1. Open the browser.
+2. Go to the login page: https://demoqa.com/automation-practice-form.
 
-12.Нажать кнопку Submit
+### Steps:
+1. Fill in the "First Name" field with an arbitrary string.
+2. Fill in the "Last Name" field with an arbitrary string.
+3. Fill in the "Email" field with a string in the format name@example.com.
+4. Select any value in the "Gender" field using the toggle switch.
+5. Fill in the "Mobile" field with any 10 digits.
+6. Fill in the "Date of Birth" field with an arbitrary date using the pop-up calendar.
+7. Fill in the "Subjects" field with an arbitrary string.
+8. Upload any image to the "Picture" field.
+9. Fill in the "Current Address" field with an arbitrary string.
+10. Select any value in the "Select State" field using the dropdown list.
+11. Select any value in the "Select City" field using the dropdown list.
+12. Click the "Submit" button.
 
-   
-Ожидаемый результат:
-1. Появилось всплывающее окно с заголовком Thanks for submitting the form
-2. В таблице на окне отображаются введенные ранее значения
+### Expected Result:
+1. A pop-up window with the title "Thanks for submitting the form" will appear.
+2. The previously entered values will be displayed in the table on the window.
 
-# Запуск проекта
-#### Настройка:
-- Клонируйте репозиторий на свой компьютер
+--- 
 
-- Перейдите в корневую папку проекта
+# Project setup
 
-- Создайте виртуальное окружение:
+#### Configuration:
+- Clone the repository to your computer.
+- Navigate to the root folder of the project.
+- Create a virtual environment:
 ```
 python -m venv venv
 ```
-
-- Активируйте виртуальное окружение:
+- Activate the virtual environment:
 ```
 source venv/Scripts/activate
 ```
 
-#### Зависимости:
+#### Dependencies:
 
-- Установите зависимости:
+- Install dependencies:
 ```
 pip install -r requirements.txt
 ```
 
-#### Запуск автотестов
+#### Running automated tests
 
-- Выполните команду для запуска тестов:
+- Execute the following command to run the tests:
 ```
 pytest -s -v
 ```
 
-#### Генерация и запуск отчетов Allure
+#### Generating and running allure reports
 
-- Выполните команду для запуска тестов:
+- Execute the following command to run the tests:
 ```
 pytest -s -v --alluredir allure-results
 ```
 
-- Выполните команду для просмотра отчета:
+- Execute the following command to view the report:
 ```
 allure serve allure-results
 ```
