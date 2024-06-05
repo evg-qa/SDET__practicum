@@ -1,6 +1,6 @@
 # SDET__practicum
 
-## Test Task
+## Test Task - for admission to the sdet practicum
 
 1. Choose a programming language - Java (version 11 or 17 recommended) or Python (version 3.10 recommended) to create a project of UI tests based on the described test cases below.
 2. Use the following in the project:
